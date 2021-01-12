@@ -27,7 +27,7 @@ field:"Quick brown fox"
 5. To select documents with a phrase in a field with words not in order and one or more words are present
 
 ```
-field:Quick brown fox
+field:(Quick brown fox)
 ```
 
 The above condition is also equivalent to
@@ -80,12 +80,6 @@ not field:value
 
     ```
     Kubernetes.*: vwo-app
-    ```
-
-    3.  Wildcard for single character
-
-    ```
-    field:v?lue
     ```
 
 11. Ranges
