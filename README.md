@@ -78,6 +78,12 @@ not field:value
    Kubernetes.*: vwo-app
    ```
 
+   3. Wildcard for single character
+
+   ```
+   field:v?lue
+   ```
+
 10. Ranges
     1. Less than
     ```
@@ -100,3 +106,4 @@ not field:value
 
 1. Kibana while searching strips off punctuations and special characters and thus cant be used to search for values
 2. Use Parenthesis in queries for optimized results
+3. `-` is not supported in query, to search for some value containing `-` either put the string in `""` or replace it with `?`
