@@ -42,9 +42,13 @@ field:(Quick or brown or fox)
 field:(Quick and brown and fox)
 ```
 
-NOTE: Conditions can be joined by using brackets
+7. Keyword Match which matched complete value instead of phrases
 
-7. Combining 2 conditions
+```
+field.keyword: "VALUE-ABCD"
+```
+
+8. Combining 2 conditions
 
    1. AND
 
@@ -58,33 +62,33 @@ NOTE: Conditions can be joined by using brackets
    field1:value1 or field2:value2
    ```
 
-8. Negation
+9. Negation
 
 ```
 not field:value
 ```
 
-9. WildCard Statements
+10. WildCard Statements
 
-   1. Wildcard for Values
+    1. Wildcard for Values
 
-   ```
-   operating_system: Win*
-   ```
+    ```
+    operating_system: Win*
+    ```
 
-   2. Wildcard for Fields
+    2.  Wildcard for Fields
 
-   ```
-   Kubernetes.*: vwo-app
-   ```
+    ```
+    Kubernetes.*: vwo-app
+    ```
 
-   3. Wildcard for single character
+    3.  Wildcard for single character
 
-   ```
-   field:v?lue
-   ```
+    ```
+    field:v?lue
+    ```
 
-10. Ranges
+11. Ranges
     1. Less than
     ```
     field < 100
