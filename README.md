@@ -1,4 +1,4 @@
-# KIBANA KQL CHEAT SHEET
+# KIBANA KQL CHEAT SHEET (v7.4)
 
 1. To select documents with 'value' in any field
 
