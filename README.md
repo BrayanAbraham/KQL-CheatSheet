@@ -104,4 +104,4 @@ not field:value
 
 1. Kibana while searching strips off punctuations and special characters and thus cant be used to search for values
 2. Use Parenthesis in queries for optimized results
-3. `-` is not supported in query, to search for some value containing `-` either put the string in `""` or replace it with `?`
+3. `-` is not supported in query, to search for some value containing `-` put the string in `""`
